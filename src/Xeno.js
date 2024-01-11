@@ -3,7 +3,7 @@ const fs = require("fs");
 
 module.exports = class Xeno extends Client {
     constructor(...options) {
-        super(...options);
+        super(...optionds);
 
         this.express = require("express")(); /* Express Server */
         this.server = require('http').Server(this.express); /* HTTP Server */
