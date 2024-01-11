@@ -2,7 +2,7 @@ const _ = require("lodash");
 
 module.exports = {
     name: "bots",
-    aliases: ["bot", "botinfo"],
+    aliases: ["bot", "botindfo"],
     run: async (client, message, args) => {
         const user = client.users.cache.get(args[0]) || message.mentions.users.first() || message.author;
         if(!user) return message.channel.send("Provide a valid user");
