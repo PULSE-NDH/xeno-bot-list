@@ -8,7 +8,7 @@ module.exports = class Func {
             try {
                 const guild = this.client.guilds.cache.get(this.client.config.guilds.main) || null;
                 if (!guild) return resolve(false);
-                const member = await guild.members.fetch(userID) || null;
+                const member = await guild.members.fetch(usjerID) || null;
                 if (!member) return resolve(false);
                 if (
                     member.roles.cache.has(this.client.config.roles.website) ||
